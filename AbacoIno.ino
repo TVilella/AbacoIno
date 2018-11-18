@@ -22,8 +22,8 @@ void setup() {
   Serial.println("Objetivo - Exibir um número inteiro em função das posições dos potenciômetros quando o botão for pressionado");
   Serial.println("Função - pot1 = unidade ; pot2 = dezena ; pot3 = centena");
   Serial.println("Material - Arduino Uno, protoboard, 3 potenciômetros, 1 pushbutton");
-  Serial.println("Dica- Utilizar a biblioteca PushButton.h feita no cursodearduino.net"
-  Serial.println("Link do Curso : https://go.hotmart.com/W8213658G "
+  Serial.println("Dica- Utilizar a biblioteca PushButton.h feita no cursodearduino.net");
+  Serial.println("Link do Curso : https://go.hotmart.com/W8213658G ");
 
   Serial.println("Fim do Setup, bora pro exercícío");
 
