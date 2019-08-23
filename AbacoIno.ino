@@ -1,31 +1,38 @@
-/*  Projeto:          Execício
- *  Autor:            Thiago Vilella
- *  Objetivo:         Prática em programação com Arduino e conceitos de Eletrônica Básica
- *  Canal Youtube:    https://www.youtube.com/channel/UCpg7_v1Wtvp-XPj-vjh8igQ <-- Maiores explicações sobre o exercício e os objetivos
- *  Link do Curso:    https://go.hotmart.com/W8213658G
- *  AbacoIno Versão:  1.0.0
+/*
+ *  AUTOR:          Thiago Vilella
+ *  YOUTUBE:        https://www.youtube.com/channel/UCpg7_v1Wtvp-XPj-vjh8igQ
+ *  DAILYMOTION:    https://www.dailymotion.com/dm_2f470f25794e41f057a2fba895ff6f3c
+ *  CURSO ARDUINO:  http://bit.ly/2ZhypC9
+ *  CURSO ROBOTICA: http://bit.ly/2zjK9Eo
+ *  COMPRE:         https://www.arducore.com.br/
+ *  SKETCH:         AbacoIno
+ *  VERSÃO:         1.0.1
+ *  DATA:           22/08/2019
 */
 
-#include <PushButton.h>
+// INCLUSÃO DE BIBLIOTECAS
+#include <myPushButton.h>
 
+// DEFINIÇÕES DE PINOS
 #define pinPot1 A5
 #define pinPot2 A3
 #define pinPot3 A0
 #define pinBot1 3
 
-PushButton botao(pinBot1);
+// INSTANCIANDO OBJETOS
+myPushButton botao(pinBot1);
 
 void setup() {
   Serial.begin(9600);
 
-  Serial.println("Título - Ábaco com Arduino");
-  Serial.println("Objetivo - Exibir um número inteiro em função das posições dos potenciômetros quando o botão for pressionado");
-  Serial.println("Função - pot1 = unidade ; pot2 = dezena ; pot3 = centena");
-  Serial.println("Material - Arduino Uno, protoboard, 3 potenciômetros, 1 pushbutton");
-  Serial.println("Dica- Utilizar a biblioteca PushButton.h feita no cursodearduino.net");
-  Serial.println("Link do Curso : https://go.hotmart.com/W8213658G ");
+  Serial.println(F("Título - Ábaco com Arduino"));
+  Serial.println(F("Objetivo - Exibir um número inteiro em função das posições dos potenciômetros quando o botão for pressionado"));
+  Serial.println(F("Função - pot1 = unidade ; pot2 = dezena ; pot3 = centena"));
+  Serial.println(F("Material - Arduino Uno, protoboard, 3 potenciômetros, 1 pushbutton"));
+  Serial.println(F("Dica- Utilizar a biblioteca PushButton.h feita no cursodearduino.net"));
+  Serial.println(F("Link do Curso : https://go.hotmart.com/W8213658G "));
 
-  Serial.println("Fim do Setup, bora pro exercícío");
+  Serial.println(F("Fim do Setup, bora pro exercícío"));
 
 }
 
